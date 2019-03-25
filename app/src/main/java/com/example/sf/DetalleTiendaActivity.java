@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class DetalleTiendaActivity extends AppCompatActivity {
 
@@ -20,7 +21,9 @@ public class DetalleTiendaActivity extends AppCompatActivity {
     }
 
     public void goToChatTie(View view){
-        AlertDialog.Builder ayuda = new AlertDialog.Builder(this);
-        ayuda.setMessage("Por el momento, el chat no esta disponible.").show();
+        //AlertDialog.Builder ayuda = new AlertDialog.Builder(this);
+        //ayuda.setMessage("Por el momento, el chat no esta disponible.").show();
+        Toast.makeText(DetalleTiendaActivity.this,
+                "Por el momento, el chat no esta disponible.", Toast.LENGTH_LONG).show();
     }
 }

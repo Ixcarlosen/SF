@@ -28,7 +28,7 @@ public class BuscarProductoMActivity extends AppCompatActivity {
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                     // Mostrar mensaje
                     Toast.makeText(BuscarProductoMActivity.this,
-                            "Buscando " + v.getText().toString(), Toast.LENGTH_LONG).show();
+                            "Buscando " + v.getText().toString()+" ...", Toast.LENGTH_LONG).show();
 
                     // Ocultar teclado virtual
                     InputMethodManager imm =
@@ -43,7 +43,9 @@ public class BuscarProductoMActivity extends AppCompatActivity {
     }
 
     public void goToCamara(View view){
-        AlertDialog.Builder ayuda = new AlertDialog.Builder(this);
-        ayuda.setMessage("Por el momento, la cámara no esta disponible.").show();
+        //AlertDialog.Builder ayuda = new AlertDialog.Builder(this);
+        //ayuda.setMessage("Por el momento, la cámara no esta disponible.").show();
+        Toast.makeText(BuscarProductoMActivity.this,
+                "Por el momento, la cámara no esta disponible.", Toast.LENGTH_LONG).show();
     }
 }

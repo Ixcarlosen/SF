@@ -4,7 +4,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginUsuarioActivity">
 
     <ScrollView
         android:id="@+id/login_form"
@@ -20,13 +20,12 @@
             android:padding="10dp">
 
 
-
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
-                android:inputType="textEmailAddress"
+                android:inputType="text|textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -43,12 +42,13 @@
                 android:singleLine="true" />
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/btnIngresar"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Sign in"
+                android:onClick="Validar"
                 android:background="@color/colorPrimary"
                 android:textStyle="bold" />
 

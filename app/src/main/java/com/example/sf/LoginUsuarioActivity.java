@@ -42,7 +42,7 @@ public class LoginUsuarioActivity extends AppCompatActivity {
         {
             Toast.makeText(this, "Debes ingresar tu password",Toast.LENGTH_LONG).show();
         }
-        else if ((email.equals("gisell@gmail.com") || password.equals("12345678")))
+        else if ((email.equals("gisell@gmail.com") && password.equals("12345678")))
         {
             Intent oIntent = new Intent(this, MenuActivity.class);
             startActivity(oIntent);

@@ -1,5 +1,7 @@
 package com.example.sf;
 
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -7,6 +9,7 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +39,53 @@ public class TiendaActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.principal,menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.menu_home:
+                Intent inte = new Intent(this, MenuActivity.class);
+                startActivity(inte);
+                return true;
+            case R.id.menu_tienda:
+                Intent intent = new Intent(this, TiendaActivity.class);
+                startActivity(intent);
+
+            case R.id.menu_producto:
+                Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
+                startActivity(intentt);
+
+            case R.id.menu_foto:
+                AlertDialog.Builder foto = new AlertDialog.Builder(this);
+                foto.setMessage("La cámara no está disponible").show();
+
+            case R.id.menu_buscar:
+                Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
+                startActivity(intenttt);
+
+
+            case R.id.menu_mapa:
+                AlertDialog.Builder mapa = new AlertDialog.Builder(this);
+                mapa.setMessage("Mapa no disponible").show();
+                return true;
+
+            case R.id.menu_contactanos:
+                AlertDialog.Builder contacto = new AlertDialog.Builder(this);
+                contacto.setMessage("Contáctanos no disponible").show();
+                return true;
+
+            case R.id.menu_salir:
+                Intent intentttt = new Intent(this, LoginUsuarioActivity.class);
+                startActivity(intentttt);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
     }
 
 

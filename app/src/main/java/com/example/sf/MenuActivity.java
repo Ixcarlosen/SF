@@ -35,12 +35,17 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
 
             case R.id.menu_producto:
-                Intent intentt = new Intent(this, BuscarProductoMActivity.class);
+                Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
                 startActivity(intentt);
 
             case R.id.menu_foto:
                 AlertDialog.Builder foto = new AlertDialog.Builder(this);
                 foto.setMessage("La cámara no está disponible").show();
+
+            case R.id.menu_buscar:
+                Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
+                startActivity(intenttt);
+
 
             case R.id.menu_mapa:
                 AlertDialog.Builder mapa = new AlertDialog.Builder(this);
@@ -53,8 +58,8 @@ public class MenuActivity extends AppCompatActivity {
                 return true;
 
             case R.id.menu_salir:
-                Intent intenttt = new Intent(this, LoginUsuarioActivity.class);
-                startActivity(intenttt);
+                Intent intentttt = new Intent(this, LoginUsuarioActivity.class);
+                startActivity(intentttt);
                 return true;
 
             default:
@@ -75,7 +80,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void producto(View view){
-        Intent intentt = new Intent(this, BuscarProductoMActivity.class);
+        Intent intentt = new Intent(this,ListarProductosTiendaActivity.class);
         startActivity(intentt);
     }
 

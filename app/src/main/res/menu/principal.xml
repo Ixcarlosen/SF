@@ -22,8 +22,13 @@
 
     <item
         android:id="@+id/menu_foto"
-        android:title="Ajustes"
+        android:title="Foto"
         android:icon="@drawable/buscarfoto"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_buscar"
+        android:title="Foto"
+        android:icon="@drawable/buscar"
         app:showAsAction="always"/>
 
     <item
@@ -38,5 +43,6 @@
         android:id="@+id/menu_salir"
         android:title="Salir"
         app:showAsAction="never"/>
+
 
 </menu>

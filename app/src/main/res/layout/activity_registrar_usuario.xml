@@ -80,7 +80,7 @@
 
             <Button
                 android:id="@+id/btnRegistrar"
-                android:onClick="Registrar"
+                android:onClick="Validar"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

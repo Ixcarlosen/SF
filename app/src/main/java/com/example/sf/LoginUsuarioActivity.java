@@ -25,29 +25,26 @@ public class LoginUsuarioActivity extends AppCompatActivity {
 
     public void Validar(View view)
     {
-        String email=validaremail.getText().toString();
+        final String email=validaremail.getEditableText().toString().trim();
+        final String regex = "(?:[^<>()\\[\\].,;:\\s@\"]+(?:\\.[^<>()\\[\\].,;:\\s@\"]+)*|\"[^\\n\"]+\")@(?:[^<>()\\[\\].,;:\\s@\"]+\\.)+[^<>()\\[\\]\\.,;:\\s@\"]{2,63}";
         String password=validarpassword.getText().toString();
 
         if (email.length()==0 && password.length()==0)
         {
             Toast.makeText(this, "Campos Obligatorios",Toast.LENGTH_LONG).show();
-        }
-
-        if(email.length()==0)
+        }else   if(email.length()==0)
         {
             Toast.makeText(this, "Debes ingresar tu email",Toast.LENGTH_LONG).show();
-        }
-        if (password.length()==0)
+        }else if (!email.matches(regex))
+        {
+            Toast.makeText(this, "Por favor, introduce bien su email", Toast.LENGTH_LONG).show();
+        } else if (password.length()==0)
         {
             Toast.makeText(this, "Debes ingresar tu password",Toast.LENGTH_LONG).show();
-        }
-        //if(password.length()!=0 && password.length()<8)
-        if(email.length()!=0 && password.length()!=0)
-        {
+        } else {
             Intent intent = new Intent(this, RegistrarUsuarioActivity.class);
             startActivity(intent);
-
-
         }
     }
+
 }

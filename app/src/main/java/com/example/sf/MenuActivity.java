@@ -45,9 +45,8 @@ public class MenuActivity extends AppCompatActivity {
 
 
             case R.id.menu_notificacion:
-                AlertDialog.Builder mapa = new AlertDialog.Builder(this);
-                mapa.setMessage("Notificaciones no disponible").show();
-                return true;
+                Intent intenttttt = new Intent(this, ListarMensajesActivity.class);
+                startActivity(intenttttt);
 
             case R.id.menu_foto:
                 AlertDialog.Builder contacto = new AlertDialog.Builder(this);

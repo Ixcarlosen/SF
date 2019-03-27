@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".CategoriaActivity"></activity>
+        <activity android:name=".MenuActivity" />
         <activity android:name=".TiendaActivity" />
         <activity android:name=".LoginUsuarioActivity">
             <intent-filter>
@@ -24,8 +25,8 @@
         </activity>
         <activity android:name=".ListarMensajesActivity" />
         <activity android:name=".ListarProductosTiendaActivity" />
-        <activity android:name=".DetalleTiendaActivity"></activity>
-        <activity android:name=".RegistrarUsuarioActivity"></activity>
+        <activity android:name=".DetalleTiendaActivity" />
+        <activity android:name=".RegistrarUsuarioActivity" />
         <activity android:name=".BuscarProductoMActivity" />
         <activity android:name=".MainActivity" />
     </application>

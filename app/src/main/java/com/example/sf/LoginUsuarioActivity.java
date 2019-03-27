@@ -47,4 +47,10 @@ public class LoginUsuarioActivity extends AppCompatActivity {
         }
     }
 
+    public void enviar(View view)
+    {
+        Intent intent = new Intent(this, RegistrarUsuarioActivity.class);
+        startActivity(intent);
+    }
+
 }

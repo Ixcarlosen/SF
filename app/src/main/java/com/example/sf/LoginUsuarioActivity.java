@@ -37,17 +37,27 @@ public class LoginUsuarioActivity extends AppCompatActivity {
             Toast.makeText(this, "Debes ingresar tu email",Toast.LENGTH_LONG).show();
         }else if (!email.matches(regex))
         {
-            Toast.makeText(this, "Por favor, introduce bien su email", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Por favor, introduce bien tu email", Toast.LENGTH_LONG).show();
         } else if (password.length()==0)
         {
             Toast.makeText(this, "Debes ingresar tu password",Toast.LENGTH_LONG).show();
-        } else {
-            Intent intent = new Intent(this, RegistrarUsuarioActivity.class);
-            startActivity(intent);
         }
+        else if ((email.equals("gisell@gmail.com") || password.equals("12345678")))
+        {
+            Intent oIntent = new Intent(this, TiendaActivity.class);
+            startActivity(oIntent);
+
+
+        }
+        else
+        {
+            Toast.makeText(this, "Las credenciales no son correctas",Toast.LENGTH_LONG).show();
+        }
+
     }
 
-    public void enviar(View view)
+
+    public void enviar(View view1)
     {
         Intent intent = new Intent(this, RegistrarUsuarioActivity.class);
         startActivity(intent);

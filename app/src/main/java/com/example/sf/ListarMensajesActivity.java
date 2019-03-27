@@ -69,23 +69,20 @@ public class ListarMensajesActivity extends AppCompatActivity {
                 Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
                 startActivity(intentt);
 
-            case R.id.menu_foto:
-                android.support.v7.app.AlertDialog.Builder foto = new android.support.v7.app.AlertDialog.Builder(this);
-                foto.setMessage("La cámara no está disponible").show();
 
             case R.id.menu_buscar:
                 Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
                 startActivity(intenttt);
 
 
-            case R.id.menu_mapa:
-                android.support.v7.app.AlertDialog.Builder mapa = new android.support.v7.app.AlertDialog.Builder(this);
-                mapa.setMessage("Mapa no disponible").show();
+            case R.id.menu_notificacion:
+                AlertDialog.Builder mapa = new AlertDialog.Builder(this);
+                mapa.setMessage("Notificaciones no disponible").show();
                 return true;
 
-            case R.id.menu_contactanos:
-                android.support.v7.app.AlertDialog.Builder contacto = new AlertDialog.Builder(this);
-                contacto.setMessage("Contáctanos no disponible").show();
+            case R.id.menu_foto:
+                AlertDialog.Builder contacto = new AlertDialog.Builder(this);
+                contacto.setMessage("Cámara no disponible").show();
                 return true;
 
             case R.id.menu_salir:

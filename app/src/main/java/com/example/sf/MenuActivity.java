@@ -38,23 +38,20 @@ public class MenuActivity extends AppCompatActivity {
                 Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
                 startActivity(intentt);
 
-            case R.id.menu_foto:
-                AlertDialog.Builder foto = new AlertDialog.Builder(this);
-                foto.setMessage("La cámara no está disponible").show();
 
             case R.id.menu_buscar:
                 Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
                 startActivity(intenttt);
 
 
-            case R.id.menu_mapa:
+            case R.id.menu_notificacion:
                 AlertDialog.Builder mapa = new AlertDialog.Builder(this);
-                mapa.setMessage("Mapa no disponible").show();
+                mapa.setMessage("Notificaciones no disponible").show();
                 return true;
 
-            case R.id.menu_contactanos:
+            case R.id.menu_foto:
                 AlertDialog.Builder contacto = new AlertDialog.Builder(this);
-                contacto.setMessage("Contáctanos no disponible").show();
+                contacto.setMessage("Cámara no disponible").show();
                 return true;
 
             case R.id.menu_salir:
@@ -76,7 +73,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void categoria(View view){
         AlertDialog.Builder promocion = new AlertDialog.Builder(this);
-        promocion.setMessage("Promociones no disponibles").show();
+        promocion.setMessage("Categorias no disponibles").show();
     }
 
     public void producto(View view){

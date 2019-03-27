@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TiendaActivity"></activity>
-        <activity android:name=".LoginUsuarioActivity">
+        <activity android:name=".LoginUsuarioActivity"></activity>
         <activity android:name=".ListarMensajesActivity"></activity>
         <activity android:name=".ListarProductosTiendaActivity"></activity>
         <activity android:name=".DetalleTiendaActivity">
@@ -25,5 +25,5 @@
         <activity android:name=".RegistrarUsuarioActivity" />
         <activity android:name=".BuscarProductoMActivity"></activity>
         <activity android:name=".MainActivity" />
-    </application>
+</application>
 </manifest>

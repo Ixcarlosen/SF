@@ -44,7 +44,7 @@ public class LoginUsuarioActivity extends AppCompatActivity {
         }
         else if ((email.equals("gisell@gmail.com") || password.equals("12345678")))
         {
-            Intent oIntent = new Intent(this, TiendaActivity.class);
+            Intent oIntent = new Intent(this, MenuActivity.class);
             startActivity(oIntent);
 
 

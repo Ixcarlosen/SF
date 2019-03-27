@@ -7,6 +7,7 @@ import android.widget.ListView;
 
 public class ListarProductosTiendaActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,5 +24,9 @@ public class ListarProductosTiendaActivity extends AppCompatActivity {
         matriz[i++] = "Polo Gatubela";
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(ListarProductosTiendaActivity.this, android.R.layout.simple_list_item_1, matriz);
         lstProductos.setAdapter(adaptador);
+
+
     }
+
 }
+

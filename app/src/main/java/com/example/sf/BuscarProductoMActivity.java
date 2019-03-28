@@ -62,20 +62,24 @@ public class BuscarProductoMActivity extends AppCompatActivity {
             case R.id.menu_tienda:
                 Intent intent = new Intent(this, TiendaActivity.class);
                 startActivity(intent);
+                return true;
 
             case R.id.menu_producto:
                 Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
                 startActivity(intentt);
+                return true;
 
 
             case R.id.menu_buscar:
                 Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
                 startActivity(intenttt);
+                return true;
 
 
             case R.id.menu_notificacion:
                 Intent intenttttt = new Intent(this, ListarMensajesActivity.class);
                 startActivity(intenttttt);
+                return true;
 
             case R.id.menu_foto:
                 AlertDialog.Builder contacto = new AlertDialog.Builder(this);

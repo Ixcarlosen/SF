@@ -75,8 +75,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void categoria(View view){
-        AlertDialog.Builder promocion = new AlertDialog.Builder(this);
-        promocion.setMessage("Categorias no disponibles").show();
+        Intent intenttt = new Intent(this, CategoriaActivity.class);
+        startActivity(intenttt);
     }
 
     public void producto(View view){

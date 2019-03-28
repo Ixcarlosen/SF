@@ -26,10 +26,10 @@ public class CategoriaActivity extends AppCompatActivity {
             R.drawable.ropa_bebe,
             R.drawable.calzado_hombre,
             R.drawable.calzado_mujer,
-            R.drawable.calzado_niño
+
     };
     String[] nombres = new String[]{
-            "Ropa Hombre", "Ropa Mujer", "Ropa Bebé", "Calzado Hombre", "Calzado Mujer", "Calzado Niño"
+            "Ropa Hombre", "Ropa Mujer", "Ropa Bebé", "Calzado Hombre", "Calzado Mujer"
     };
 
     @Override

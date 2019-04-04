@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Categorias"
-        android:textSize="18dp"/>
+        android:textSize="18dp"
+        android:fontFamily="bold"/>
 
     <ListView
         android:id="@+id/lstMensajes"

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <solid android:color="#00838F"></solid>
+    <stoke android:color="#000000" android:width="2dp"></stoke>
+    <size android:width="100dp" android:height="20dp">
 
-</android.support.constraint.ConstraintLayout>
+    </size>
+    <corners android:radius="10dp"></corners>
+</shape>
+

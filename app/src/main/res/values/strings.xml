@@ -11,6 +11,17 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+        completions."</string>
+    <string name="aLisMen">Lista de Mensajes</string>
+    <string name="aLisPro">Lista de Productos</string>
+    <string name="aLisTie">Lista de Tiendas</string>
+    <string name="aLisCat">Lista de Categorías</string>
+    <string name="aPed">Pedido</string>
+    <string name="aMiPer">Mi Perfil</string>
+    <string name="aDetTie">Tienda</string>
+    <string name="aRegUsu">Registro de Usuario</string>
+    <string name="aBusPro">Buscar Producto</string>
+    <string name="aLogUsu">Login de Usuario</string>
+    <string name="aDetPro">Producto</string>
+    <string name="aMapBas">Donde ubicarlo</string>
 </resources>

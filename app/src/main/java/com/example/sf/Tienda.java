@@ -16,6 +16,9 @@ public class Tienda {
 
     }
 
+    public Tienda() {
+
+    }
     public String getTitulo() {
         return titulo;
     }

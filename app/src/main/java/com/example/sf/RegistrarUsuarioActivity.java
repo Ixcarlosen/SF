@@ -3,6 +3,8 @@ package com.example.sf;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -51,9 +53,37 @@ public class RegistrarUsuarioActivity extends AppCompatActivity
         } else if(password.length()<8) {
             Toast.makeText(this, "El password debe tener mínimo 8 caracteres",Toast.LENGTH_LONG).show();
         } else if(password.equals(confirmarpassword)) {
-            Toast.makeText(this, "Registro en proceso...",Toast.LENGTH_LONG).show();
-        } else {
+
+            /*EditText titulo = (EditText) findViewById(R.id.titulo);
+            EditText descripcion = (EditText) findViewById(R.id.descripcion);*/
+
+            RegistrarUsuarioDAO dao = new RegistrarUsuarioDAO(getBaseContext());
+            try {
+                //dao.eliminarTodos();
+                dao.insertar(validarNombre.getText().toString(), validarApellido.getText().toString(),validarEmail.getText().toString(),validarContraseña.getText().toString());
+                Toast toast= Toast.makeText(getApplicationContext(), "Se insertó correctamente", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
+                toast.show();
+
+                validarNombre.setText(""); validarApellido.setText(""); validarEmail.setText(""); validarContraseña.setText("");
+
+                Intent principal = new Intent(this, LoginUsuarioActivity.class);
+                startActivity(principal);
+            }
+                catch (DAOException e) { Log.i("UsuarioNuevoActi", "====> " + e.getMessage()); } }
+
+
+            //Toast.makeText(this, "Registro en proceso...",Toast.LENGTH_LONG).show();
+         else {
             Toast.makeText(this, "Las contraseñas no son iguales "+password +" - " + confirmarpassword,Toast.LENGTH_LONG).show();
         }
     }
+
+    public void cancelar(View v)
+    {
+        Intent intent = new Intent(this, LoginUsuarioActivity.class);
+        startActivity(intent);
+
+    }
+
 }

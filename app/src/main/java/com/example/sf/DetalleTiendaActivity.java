@@ -19,55 +19,29 @@ public class DetalleTiendaActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.principal,menu);
+        getMenuInflater().inflate(R.menu.menu_detalle_tienda,menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.menu_home:
-                Intent inte = new Intent(this, MenuActivity.class);
-                startActivity(inte);
-                return true;
-            case R.id.menu_tienda:
-                Intent intent = new Intent(this, TiendaActivity.class);
-                startActivity(intent);
-                return true;
-
-            case R.id.menu_producto:
-                Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
-                startActivity(intentt);
-                return true;
-
             case R.id.menu_buscar:
-                Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
-                startActivity(intenttt);
+                Intent buscar = new Intent(this, BuscarProductoActivity.class);
+                startActivity(buscar);
                 return true;
-
-
-            case R.id.menu_notificacion:
-                Intent intenttttt = new Intent(this, ListarMensajesActivity.class);
-                startActivity(intenttttt);
+            case R.id.menu_llamar:
+                Toast.makeText(this,
+                        "Por el momento, llamar no esta disponible", Toast.LENGTH_LONG).show();
                 return true;
-
-            case R.id.menu_foto:
-                AlertDialog.Builder contacto = new AlertDialog.Builder(this);
-                contacto.setMessage("Cámara no disponible").show();
+            case R.id.menu_mapa:
+                Intent mapa = new Intent(this, MapaBasicoActivity.class);
+                startActivity(mapa);
                 return true;
-
-            case R.id.menu_salir:
-                Intent intentttt = new Intent(this, LoginUsuarioActivity.class);
-                startActivity(intentttt);
-                return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
-
-
     }
 
     public void goToLisProTie(View view){
@@ -80,5 +54,15 @@ public class DetalleTiendaActivity extends AppCompatActivity {
         //ayuda.setMessage("Por el momento, el chat no esta disponible.").show();
         Toast.makeText(DetalleTiendaActivity.this,
                 "Por el momento, el chat no esta disponible.", Toast.LENGTH_LONG).show();
+    }
+    public void mensaje (View view)
+    {
+        Intent mensaje = new Intent(this, ListarMensajesActivity.class);
+        startActivity(mensaje);
+    }
+    public void producto (View view)
+    {
+        Intent producto = new Intent(this, BuscarProductoActivity.class);
+        startActivity(producto);
     }
 }

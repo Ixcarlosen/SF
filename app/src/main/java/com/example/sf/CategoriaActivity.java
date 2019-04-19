@@ -8,6 +8,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,12 +16,29 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class CategoriaActivity extends AppCompatActivity {
+    private List<Categoria> categoriaList = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private CategoriasAdapter mAdapter;
 
-    Integer[] imagenes = {
+    private String cadenaJson = "";
+
+   /* Integer[] imagenes = {
             R.drawable.ropa_hombre,
             R.drawable.ropa_mujer,
             R.drawable.ropa_bebe,
@@ -30,7 +48,7 @@ public class CategoriaActivity extends AppCompatActivity {
     };
     String[] nombres = new String[]{
             "Ropa Hombre", "Ropa Mujer", "Ropa Bebé", "Calzado Hombre", "Calzado Mujer"
-    };
+    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +56,7 @@ public class CategoriaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categoria);
 
 
-        ListView lv = (ListView) findViewById(R.id.lstMensajes);
+        /*ListView lv = (ListView) findViewById(R.id.lstMensajes);
         imagenNombre adapter = new imagenNombre(this, nombres, imagenes);
         lv.setAdapter(adapter);
 
@@ -46,10 +64,25 @@ public class CategoriaActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(CategoriaActivity.this,
-                        "Por el momento el direccionamiento a producto no esta disponible", Toast.LENGTH_LONG).show();
+                        "Por el momento el direccionamiento a producto no esta disponible", Toast.LENGTH_LONG).show();*
 
             }
-        });
+        });*/
+
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mAdapter = new CategoriasAdapter(categoriaList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        recyclerView.setAdapter(mAdapter);
+        prepareCategoriaData();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_categoria,menu);
+        return true;
     }
 
     @Override
@@ -57,39 +90,13 @@ public class CategoriaActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menu_home:
-                Intent inte = new Intent(this, MenuActivity.class);
-                startActivity(inte);
+                Intent home = new Intent(this, BuscarProductoActivity.class);
+                startActivity(home);
                 return true;
+
             case R.id.menu_tienda:
-                Intent intent = new Intent(this, TiendaActivity.class);
-                startActivity(intent);
-                return true;
-
-            case R.id.menu_producto:
-                Intent intentt = new Intent(this, ListarProductosTiendaActivity.class);
-                startActivity(intentt);
-                return true;
-
-
-            case R.id.menu_buscar:
-                Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
-                startActivity(intenttt);
-                return true;
-
-
-            case R.id.menu_notificacion:
-                Intent intenttttt = new Intent(this, ListarMensajesActivity.class);
-                startActivity(intenttttt);
-                return true;
-
-            case R.id.menu_foto:
-                AlertDialog.Builder contacto = new AlertDialog.Builder(this);
-                contacto.setMessage("Cámara no disponible").show();
-                return true;
-
-            case R.id.menu_salir:
-                Intent intentttt = new Intent(this, LoginUsuarioActivity.class);
-                startActivity(intentttt);
+                Intent tienda = new Intent(this, ListarTiendaActivity.class);
+                startActivity(tienda);
                 return true;
 
             default:
@@ -99,5 +106,85 @@ public class CategoriaActivity extends AppCompatActivity {
 
     }
 
+
+    /*probando*/
+    private void prepareCategoriaData() {
+
+        Request request = new Request.Builder().url("https://gisell-gisell1991.c9users.io/categorias").build();
+        OkHttpClient client = new OkHttpClient();
+
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(Call call, final Response response) throws IOException {
+                if (!response.isSuccessful()) {
+                    throw new IOException("Unexpected code " + response);
+                } else {
+                    cadenaJson = response.body().string();
+                    Log.i("====>", cadenaJson);
+                    CategoriaActivity.this.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() { onRun(); }
+                    });
+
+                }
+            }
+        });
+    }
+
+    public void onRun() {
+        Gson gson = new Gson();
+
+        Type stringStringMap = new TypeToken<ArrayList<Map<String, Object>>>() {
+        }.getType();
+        final ArrayList<Map<String, Object>> retorno = gson.fromJson(cadenaJson, stringStringMap);
+
+        for (Map<String, Object> x : retorno) {
+            Categoria categoria = new Categoria();
+
+            categoria.setTitulo(x.get("nombre").toString());
+            categoria.setDescripcion(x.get("descripcion").toString());
+            String image = x.get("id").toString();
+
+            if (image.isEmpty()){
+               //nunca entra aca
+            }
+            else {
+                if (image.equals("1.0")){
+                    categoria.setImagenId(R.drawable.ropa_hombre);
+                }
+                else if (image.equals("2.0"))
+                {
+                    categoria.setImagenId(R.drawable.ropa_mujer);
+                }
+                else if (image.equals("3.0"))
+                {
+                    categoria.setImagenId(R.drawable.ropa_bebe);
+                }
+                else if (image.equals("4.0"))
+                {
+                    categoria.setImagenId(R.drawable.calzado_mujer);
+                }
+                else if (image.equals("5.0"))
+                {
+                    categoria.setImagenId(R.drawable.calzado_hombre);
+                }
+                else if (image.equals("6.0"))
+                {
+                    categoria.setImagenId(R.drawable.calzado_nino);
+                }
+
+        }
+            categoriaList.add(categoria);
+        }
+        mAdapter.notifyDataSetChanged();
+    }
 }
+
+
+
 

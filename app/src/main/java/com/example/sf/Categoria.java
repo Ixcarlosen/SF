@@ -3,13 +3,16 @@ package com.example.sf;
 public class Categoria {
     private String titulo;
     private String descripcion;
-
     private int imagenId;
 
     public Categoria(String titulo, String descripcion, int imagenId) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.imagenId = imagenId;
+
+    }
+
+    public Categoria() {
 
     }
 

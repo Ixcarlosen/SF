@@ -18,7 +18,7 @@ public class MenuActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.principal,menu);
+        getMenuInflater().inflate(R.menu.menu_buscar_producto,menu);
         return true;
     }
 
@@ -31,7 +31,7 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(inte);
                 return true;
             case R.id.menu_tienda:
-                Intent intent = new Intent(this, TiendaActivity.class);
+                Intent intent = new Intent(this, ListarTiendaActivity.class);
                 startActivity(intent);
                 return true;
 
@@ -42,7 +42,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
             case R.id.menu_buscar:
-                Intent intenttt = new Intent(this, BuscarProductoMActivity.class);
+                Intent intenttt = new Intent(this, BuscarProductoActivity.class);
                 startActivity(intenttt);
                 return true;
 
@@ -70,7 +70,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void tienda(View view){
-        Intent intent = new Intent(this, TiendaActivity.class);
+        Intent intent = new Intent(this, ListarTiendaActivity.class);
         startActivity(intent);
     }
 

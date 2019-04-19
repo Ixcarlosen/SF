@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "541418380008",
+    "firebase_url": "https://cursoandroid2019-237301.firebaseio.com",
+    "project_id": "cursoandroid2019-237301",
+    "storage_bucket": "cursoandroid2019-237301.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541418380008:android:c0dad8f117ee4619",
+        "android_client_info": {
+          "package_name": "com.example.laboratorio8application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541418380008-38hsc16nq98niu7fap0ret2q1libqrq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.laboratorio8application",
+            "certificate_hash": "be39274e5f0d37ad298ee37984b2c0eb76b882b9"
+          }
+        },
+        {
+          "client_id": "541418380008-e9jesk53sshpodldibt8bup0dflcmoin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqtqc7QOX8Hmraifbs1y37Is-wyI3mYzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541418380008-e9jesk53sshpodldibt8bup0dflcmoin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541418380008:android:3214213e91252d57",
+        "android_client_info": {
+          "package_name": "com.example.sf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541418380008-1ie3f05arafbosljpknugfc596i8dni3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sf",
+            "certificate_hash": "cf08b9494da4a081a36bfc19310ec1c3481dd20e"
+          }
+        },
+        {
+          "client_id": "541418380008-e9jesk53sshpodldibt8bup0dflcmoin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqtqc7QOX8Hmraifbs1y37Is-wyI3mYzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541418380008-e9jesk53sshpodldibt8bup0dflcmoin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

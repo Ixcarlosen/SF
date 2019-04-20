@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -30,13 +31,19 @@
             android:label="@string/aMapBas"></activity>
         <activity
             android:name=".MensajeActivity"
-            android:label="@string/aLisMen"></activity>
+            android:label="@string/aMen"></activity>
         <activity
             android:name=".PedidoActivity"
             android:label="@string/aPed"></activity>
         <activity
             android:name=".PerfilActivity"
-            android:label="@string/aMiPer"></activity>
+            android:label="@string/aMiPer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".PrincipalActivity" />
         <activity
             android:name=".CategoriaActivity"
@@ -63,13 +70,7 @@
         <activity android:name=".BuscarProductoActivity"></activity>
         <activity
             android:name=".DetalleProductoActivity"
-            android:label="@string/aDetPro">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/aDetPro"></activity>
         <service android:name=".MyAndroidFirebaseMsgService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

@@ -24,4 +24,5 @@
     <string name="aLogUsu">Login de Usuario</string>
     <string name="aDetPro">Producto</string>
     <string name="aMapBas">Donde ubicarlo</string>
+    <string name="aMen">Enviar Mensaje</string>
 </resources>

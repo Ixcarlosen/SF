@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MensajeActivity">
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/mensaje_texto"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/textMsg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Escribe tu mensaje aquí..."
+            android:inputType="textMultiLine"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/textPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:layout_margin="20dp"
+            android:hint="Número de contacto"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Send"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:background="@layout/boton1"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

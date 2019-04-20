@@ -56,4 +56,8 @@ public class PerfilActivity extends AppCompatActivity {
     public void actualizar(View view) {
 
     }
+
+    public void eliminar(View view) {
+
+    }
 }

@@ -49,12 +49,11 @@ public class BuscarProductoActivity extends AppCompatActivity {
     private ProductoAdapter mAdapter;
     private String cadenaJson = "";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar_producto);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //recibirDatos();
         EditText campoBusqueda = (EditText) findViewById(R.id.txvBuscarM);

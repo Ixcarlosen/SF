@@ -44,10 +44,12 @@
             android:id="@+id/send"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:text="Send"
+            android:text="Enviar"
             android:textSize="15dp"
+            android:textColor="#FFFF"
             android:layout_gravity="center"
             android:background="@layout/boton1"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
     </LinearLayout>
 </ScrollView>

@@ -11,15 +11,22 @@
   <component name="ChangeListManager">
     <list default="true" id="36c9a62e-dbad-4f2b-b939-6102e6c37431" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SF-fusion.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sf/BuscarProductoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sf/BuscarProductoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sf/MensajeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sf/MensajeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleProductoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleProductoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleTiendaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleTiendaActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sf/PerfilActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sf/PerfilActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_producto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_producto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_tienda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_tienda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_usuario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_usuario.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/boton1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/boton1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_buscar_producto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_buscar_producto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_perfil.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -259,47 +266,47 @@
     <session id="-1103358542">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="2" />
-          <entry key="java" value="4" />
+          <entry key="java" value="16" />
           <entry key="png" value="4" />
-          <entry key="xml" value="19" />
+          <entry key="xml" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="2" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="4" />
-          <entry key="XML" value="19" />
+          <entry key="JAVA" value="16" />
+          <entry key="XML" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="59" />
-          <entry key="txt" value="3" />
-          <entry key="xml" value="325" />
+          <entry key="java" value="106" />
+          <entry key="txt" value="19" />
+          <entry key="xml" value="533" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="59" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="325" />
+          <entry key="JAVA" value="106" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="XML" value="533" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -316,10 +323,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/Tienda.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/DAOException.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/DAOException.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/DbHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/Usuario.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_pedidos.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/Producto.java" />
@@ -331,42 +334,46 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/ProductoAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/categoria_fila.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/CategoriaActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/TiendaAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_tienda.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/ListarTiendaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/PedidoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedido.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login_usuario.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_buscar_producto.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_buscar_producto.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_listar_mensajes.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_listar_mensajes.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_categoria.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_detalle_producto.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_mapa_basico.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_detalle_tienda.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleTiendaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/ListarMensajesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_mapa.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/MapaBasicoActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/MyAndroidFirebaseMsgService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_perfil.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_producto.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleProductoActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_tienda.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/boton1.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/BuscarProductoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje_fila.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/MensajeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/PerfilActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/boton1.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login_usuario.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleProductoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_producto.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_tienda.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleTiendaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_buscar_producto.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_perfil.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/BuscarProductoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/PerfilActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_actualizar_usuario.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sf/ActualizarUsuarioActivity.java" />
       </list>
     </option>
   </component>
@@ -384,7 +391,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SF" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,33 +413,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SF" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="SF" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="SF" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="sf" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SF" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -433,18 +424,18 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\USER\Documents\GitHub\SF\app\src\main\res\drawable" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="com.example.sf" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\USER\Documents\GitHub\SF\app\src\main\res\drawable" />
       <recent name="C:\Users\USER\Documents\GitHub\SF\app\src\main\res\layout" />
       <recent name="C:\Users\USER\Documents\Android_Studio_Projects\Ultimo_Proyecto_Android\SF-fusion\app\src\main\res\drawable" />
       <recent name="C:\Users\USER\Documents\Android_Studio_Projects\Ultimo_Proyecto_Android\SF-fusion\app" />
       <recent name="C:\Users\alumnos\AndroidStudioProjects\SF-fusion\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.example.sf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Documents\GitHub\SF\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -558,6 +549,14 @@
       <option name="presentableId" value="Default" />
       <updated>1554339890103</updated>
     </task>
+    <task id="LOCAL-00001" summary="Activity Mensaje">
+      <created>1555748593703</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555748593704</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -570,7 +569,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25835866" />
@@ -580,7 +579,6 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.35573772" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946696" weight="0.62786883" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32786885" />
@@ -591,6 +589,7 @@
       <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.23442623" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32978722" />
@@ -628,6 +627,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Activity Mensaje" />
+    <option name="LAST_COMMIT_MESSAGE" value="Activity Mensaje" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -649,123 +652,15 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sf/LoginUsuarioActivity.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/Usuario.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/LoginUsuarioActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="149" column="15" lean-forward="true" selection-start-line="1" selection-end-line="149" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_principal.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/categoria_fila.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login_usuario.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="63" column="58" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="58" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/iroman.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tienda_fila.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_categoria.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_buscar_producto.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/Producto.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_listar_mensajes.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mapa_basico.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/Tienda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detalle_producto.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleTiendaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detalle_tienda.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/ListarMensajesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/google-services.json" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/MyAndroidFirebaseMsgService.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_perfil.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listar_mensajes.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/logotienda.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleProductoActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -780,68 +675,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/boton1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buscar_producto_m.xml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje_fila.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/BuscarProductoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buscar_producto.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_mapa.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_producto.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="87" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/MensajeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -857,25 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_tienda.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="90" selection-start-line="90" selection-end-line="90" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <element signature="e#1668#1682#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/usuario.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -885,31 +708,239 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/password.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/direccion_perfil.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listar_mensajes.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="17" selection-end-column="45" />
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listar_productos_tienda.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mapa_basico.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje_fila.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="19">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/direccion_perfil.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buscar_producto.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tienda.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_principal.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedido.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/boton1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login_usuario.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="109" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleProductoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/DetalleTiendaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_tienda.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="91" column="46" selection-start-line="90" selection-start-column="37" selection-end-line="91" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_producto.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="91" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_categoria.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_buscar_producto.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detalle_producto.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detalle_tienda.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_listar_mensajes.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_mapa.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_pedidos.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_tienda.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/principal.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/segundario.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/BuscarProductoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_perfil.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="99" column="53" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_usuario.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="123" column="59" lean-forward="true" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mensaje.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/RegistrarUsuarioActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/PerfilActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="561">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/LoginUsuarioActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sf/ActualizarUsuarioActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_actualizar_usuario.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

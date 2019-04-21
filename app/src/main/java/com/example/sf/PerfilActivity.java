@@ -34,10 +34,6 @@ public class PerfilActivity extends AppCompatActivity {
             case R.id.menu_atras:
                 this.finish();
                 return true;
-            case R.id.menu_lmensajes:
-                Intent mensajes = new Intent(this, ListarMensajesActivity.class);
-                startActivity(mensajes);
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -54,7 +50,8 @@ public class PerfilActivity extends AppCompatActivity {
 }*/
 
     public void actualizar(View view) {
-
+        Intent buscar = new Intent(this, ActualizarUsuarioActivity.class);
+        startActivity(buscar);
     }
 
     public void eliminar(View view) {

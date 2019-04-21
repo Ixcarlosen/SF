@@ -11,8 +11,4 @@
         android:title="Retroceder"
         android:icon="@drawable/anterior"
         app:showAsAction="always"/>
-    <item
-        android:id="@+id/menu_lmensajes"
-        android:title="Listar Mensajes"
-        app:showAsAction="never"/>
 </menu>

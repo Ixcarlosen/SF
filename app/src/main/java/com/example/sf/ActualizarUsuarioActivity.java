@@ -11,14 +11,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class RegistrarUsuarioActivity extends AppCompatActivity {
+public class ActualizarUsuarioActivity extends AppCompatActivity {
 
     private EditText validarNombre,validarApellido,validarEmail,validarContraseña,confirmarContraseña;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrar_usuario);
+        setContentView(R.layout.activity_actualizar_usuario);
 
         validarNombre=(EditText)findViewById(R.id.txtNombre);
         validarApellido=(EditText)findViewById(R.id.txtApellido);
@@ -27,8 +27,8 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
         confirmarContraseña=(EditText)findViewById(R.id.txtConfirmarPassword);
     }
 
-    //metodo de boton
-    public void Validar(View view) {
+    public void Validar(View view)
+    {
         String nombre=validarNombre.getText().toString();
         String apellido=validarApellido.getText().toString();
         final String email=validarEmail.getEditableText().toString().trim();
@@ -52,9 +52,6 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
             Toast.makeText(this, "El password debe tener mínimo 8 caracteres",Toast.LENGTH_LONG).show();
         } else if(password.equals(confirmarpassword)) {
 
-            /*EditText titulo = (EditText) findViewById(R.id.titulo);
-            EditText descripcion = (EditText) findViewById(R.id.descripcion);*/
-
             RegistrarUsuarioDAO dao = new RegistrarUsuarioDAO(getBaseContext());
             try {
                 //dao.eliminarTodos();
@@ -68,17 +65,32 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
                 Intent principal = new Intent(this, LoginUsuarioActivity.class);
                 startActivity(principal);
             }
-                catch (DAOException e) { Log.i("UsuarioNuevoActi", "====> " + e.getMessage()); } }
+            catch (DAOException e) { Log.i("UsuarioActualizadoActi", "====> " + e.getMessage()); } }
 
-
-            //Toast.makeText(this, "Registro en proceso...",Toast.LENGTH_LONG).show();
-         else {
+        //Toast.makeText(this, "Registro en proceso...",Toast.LENGTH_LONG).show();
+        else {
             Toast.makeText(this, "Las contraseñas no son iguales "+password +" - " + confirmarpassword,Toast.LENGTH_LONG).show();
         }
     }
 
-    public void cancelar(View v) {
-        Intent intent = new Intent(this, LoginUsuarioActivity.class);
-        startActivity(intent);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_perfil,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_buscar:
+                Intent buscar = new Intent(this, BuscarProductoActivity.class);
+                startActivity(buscar);
+                return true;
+            case R.id.menu_atras:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

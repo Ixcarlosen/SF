@@ -8,7 +8,6 @@
     tools:context=".PerfilActivity"
     android:orientation="vertical">
 
-
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -56,8 +55,7 @@
                     android:singleLine="true"
                     android:hint="Apellidos"
                     android:enabled="false"
-                    android:drawableLeft="@drawable/usuario"
-                    />
+                    android:drawableLeft="@drawable/usuario" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -73,42 +71,7 @@
                     android:singleLine="true"
                     android:enabled="false"
                     android:hint="Email"
-                    android:drawableLeft="@drawable/mensaje"
-                    />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <android.support.design.widget.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txtTelf"
-                    android:inputType="text|textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:enabled="false"
-                    android:hint="Teléfono"
-                    android:drawableLeft="@drawable/telefono_perfil"
-                    />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <android.support.design.widget.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txtDire"
-                    android:inputType="text|textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:enabled="false"
-                    android:hint="Dirección"
-                    android:drawableLeft="@drawable/direccion_perfil"
-                    />
+                    android:drawableLeft="@drawable/mensaje" />
             </android.support.design.widget.TextInputLayout>
 
             <Button
@@ -119,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Actualizar Usuario"
+                android:textColor="#FFFF"
                 android:background="@layout/boton1"
                 android:textStyle="bold" />
 
@@ -128,12 +92,12 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="Eliminar Usuario"
+                android:textColor="#FFFF"
                 android:background="@layout/boton1"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

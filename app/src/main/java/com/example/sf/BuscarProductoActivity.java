@@ -143,31 +143,20 @@ public class BuscarProductoActivity extends AppCompatActivity {
                 Toast.makeText(BuscarProductoActivity.this,
                         "Por el momento, la cámara no esta disponible.", Toast.LENGTH_LONG).show();
                 return true;
-
-            case R.id.menu_lmensajes:
-                Intent mensajes = new Intent(this, ListarMensajesActivity.class);
-                startActivity(mensajes);
-                return true;
-
             case R.id.menu_categorias:
                 Intent categorias = new Intent(this, CategoriaActivity.class);
                 startActivity(categorias);
                 return true;
-
             case R.id.menu_perfil:
                 Intent perfil = new Intent(this, PerfilActivity.class);
                 startActivity(perfil);
                 return true;
-            //perfil.putExtra("email", email);
-
             case R.id.menu_salir:
                 Intent salir = new Intent(this, LoginUsuarioActivity.class);
                 startActivity(salir);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-
-
         }
     }
 

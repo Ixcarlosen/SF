@@ -7,8 +7,8 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ActualizarUsuarioActivity"></activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -26,55 +28,58 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="my_channel_id_01" />
+
         <activity
             android:name=".MapaBasicoActivity"
-            android:label="@string/aMapBas"></activity>
+            android:label="@string/aMapBas" />
         <activity
             android:name=".MensajeActivity"
-            android:label="@string/aMen"></activity>
+            android:label="@string/aMen" />
         <activity
             android:name=".PedidoActivity"
-            android:label="@string/aPed"></activity>
+            android:label="@string/aPed" />
         <activity
             android:name=".PerfilActivity"
-            android:label="@string/aMiPer">
+            android:label="@string/aMiPer" />
+        <activity android:name=".PrincipalActivity" />
+        <activity
+            android:name=".CategoriaActivity"
+            android:label="@string/aLisCat" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".ListarTiendaActivity"
+            android:label="@string/aLisTie" />
+        <activity
+            android:name=".LoginUsuarioActivity"
+            android:label="@string/aLogUsu" />
+        <activity
+            android:name=".ListarMensajesActivity"
+            android:label="@string/aLisMen" />
+        <activity
+            android:name=".ListarProductosTiendaActivity"
+            android:label="@string/aLisPro" />
+        <activity
+            android:name=".DetalleTiendaActivity"
+            android:label="@string/aDetTie" />
+        <activity
+            android:name=".RegistrarUsuarioActivity"
+            android:label="@string/aRegUsu" />
+        <activity android:name=".BuscarProductoActivity" />
+        <activity
+            android:name=".DetalleProductoActivity"
+            android:label="@string/aDetPro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrincipalActivity" />
-        <activity
-            android:name=".CategoriaActivity"
-            android:label="@string/aLisCat"></activity>
-        <activity android:name=".MenuActivity" />
-        <activity
-            android:name=".ListarTiendaActivity"
-            android:label="@string/aLisTie"></activity>
-        <activity
-            android:name=".LoginUsuarioActivity"
-            android:label="@string/aLogUsu"></activity>
-        <activity
-            android:name=".ListarMensajesActivity"
-            android:label="@string/aLisMen"></activity>
-        <activity
-            android:name=".ListarProductosTiendaActivity"
-            android:label="@string/aLisPro"></activity>
-        <activity
-            android:name=".DetalleTiendaActivity"
-            android:label="@string/aDetTie"></activity>
-        <activity
-            android:name=".RegistrarUsuarioActivity"
-            android:label="@string/aRegUsu"></activity>
-        <activity android:name=".BuscarProductoActivity"></activity>
-        <activity
-            android:name=".DetalleProductoActivity"
-            android:label="@string/aDetPro"></activity>
+
         <service android:name=".MyAndroidFirebaseMsgService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
     </application>
+
 </manifest>

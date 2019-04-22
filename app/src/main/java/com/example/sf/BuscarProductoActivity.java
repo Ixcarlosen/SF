@@ -84,42 +84,22 @@ public class BuscarProductoActivity extends AppCompatActivity {
         mAdapter.setListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                final String nombre;
-
+                /*final String nombre;
                 nombre = productoList.get(recyclerView.getChildAdapterPosition(v)).getNombre();
                 Toast.makeText(getApplicationContext(),"Selección: "+
-                        productoList.get(recyclerView.getChildAdapterPosition(v)).getNombre(),Toast.LENGTH_SHORT).show();
+                        productoList.get(recyclerView.getChildAdapterPosition(v)).getNombre(),Toast.LENGTH_SHORT).show();*/
+
+                Producto item = productoList.get(recyclerView.getChildAdapterPosition(v));
                 Intent intent = new Intent (v.getContext(), DetalleProductoActivity.class);
+
+                intent.putExtra("id", item.getId());
+                intent.putExtra("nombre", item.getNombre());
+                intent.putExtra("descripción", item.getDescripcion());
+                intent.putExtra("marca", item.getMarca());
+                intent.putExtra("precio", item.getPrecio());
                 startActivityForResult(intent, 0);
 
-                //alert dialog:
-                /*AlertDialog.Builder alerta = new AlertDialog.Builder(BuscarProductoActivity.this);
-                alerta.setMessage("¿Desea pedir este producto?")
-                        .setCancelable(false)
 
-                        .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-
-                                //finish();
-                                //Intent oIntent = new Intent(this,getApplicationContext(PedidoActivity.class));
-                               // oIntent.putExtra("nombre",nombre);
-                               // startActivity(oIntent);
-
-                                Toast.makeText(getApplicationContext(), "Se agrego producto", Toast.LENGTH_SHORT).show();
-
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        });
-                AlertDialog titulo = alerta.create();
-                titulo.setTitle("Agregar pedido");
-                titulo.show();*/
             }
         });
         recyclerView.setAdapter(mAdapter);
@@ -202,11 +182,13 @@ public class BuscarProductoActivity extends AppCompatActivity {
 
         for (Map<String, Object> x : retorno) {
             Producto producto = new Producto();
+
             producto.setNombre(x.get("nombre").toString());
             producto.setDescripcion(x.get("descripcion").toString());
             producto.setPrecio(x.get("precio").toString());
             producto.setMarca(x.get("marca").toString());
             String image = x.get("id").toString();
+            producto.setId(image);
             if (image.isEmpty()){
                 //nunca entra aqui
             }

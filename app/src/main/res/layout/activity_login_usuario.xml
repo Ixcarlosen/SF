@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginUsuarioActivity">
 
-
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#A7FFEB">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="20dp"
             android:padding="10dp">
 
             <TextView
@@ -28,22 +25,20 @@
                 android:layout_height="match_parent"
                 android:textSize="23dp"
                 android:textColor="@color/colorPrimary"
-                android:textStyle="bold|italic"
+                android:textStyle="bold"
                 android:layout_weight="1"
-                android:text="SEARCH AND FIND"
+                android:text="@string/name_app_sf"
                 android:textAlignment="center"/>
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:src="@drawable/logo"
+                android:layout_height="220dp"
+                android:src="@drawable/logo_app"
                 android:textAlignment="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="24dp"
-                android:layout_marginEnd="8dp"
-
-               />
+                android:layout_marginEnd="8dp"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -80,7 +75,6 @@
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
 
-
             <Button
                 android:id="@+id/btnIngresar"
                 style="?android:textAppearanceSmall"
@@ -96,16 +90,24 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:onClick="enviar"
+                android:layout_height="wrap_content"
                 android:textColor="#424242"
                 android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="
-
-          ¿Aún no tienes una cuenta? Regístrate" />
-
-
+                android:layout_marginTop="20dp"
+                android:text="¿Aún no tienes una cuenta?" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviar"
+                android:textColor="#00bfbf"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Regístrate"
+                android:textSize="18dp"/>
         </LinearLayout>
     </ScrollView>
 

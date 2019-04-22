@@ -57,7 +57,7 @@ public class DetalleTiendaActivity extends AppCompatActivity {
     }
     public void mensaje (View view)
     {
-        Intent mensaje = new Intent(this, ListarMensajesActivity.class);
+        Intent mensaje = new Intent(this, MensajeActivity.class);
         startActivity(mensaje);
     }
     public void producto (View view)

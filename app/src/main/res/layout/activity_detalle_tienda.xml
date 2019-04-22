@@ -71,9 +71,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:text="PRODUCTOS"
+            android:textColor="#FFFF"
             android:background="@layout/boton1"
             android:onClick="btnLisPT"/>
 
@@ -85,7 +86,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:text="MENSAJE"
+            android:textColor="#FFFF"
             android:background="@layout/boton1"
-            android:onClick="mensaje"/>
+            android:onClick="mensaje"
+            android:layout_marginBottom="20dp"/>
     </LinearLayout>
 </ScrollView>

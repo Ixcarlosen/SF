@@ -1,6 +1,8 @@
 package com.example.sf;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,11 +11,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ActualizarUsuarioActivity extends AppCompatActivity {
 
     private EditText validarNombre,validarApellido,validarEmail,validarContraseña,confirmarContraseña;
+    int idObtenido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,18 @@ public class ActualizarUsuarioActivity extends AppCompatActivity {
         validarEmail=(EditText)findViewById(R.id.txtEmail);
         validarContraseña=(EditText)findViewById(R.id.txtPassword);
         confirmarContraseña=(EditText)findViewById(R.id.txtConfirmarPassword);
+
+        SharedPreferences prefs = getSharedPreferences("PERFIL", Context.MODE_PRIVATE);
+        idObtenido = prefs.getInt("ID", 0);
+        String nombre = prefs.getString("NOMBRE", "");
+        String apellido = prefs.getString("APELLIDO", "");
+        String email = prefs.getString("EMAIL", "");
+        TextView tv1 = (TextView)findViewById(R.id.txtNombre);
+        TextView tv2 = (TextView)findViewById(R.id.txtApellido);
+        TextView tv3 = (TextView)findViewById(R.id.txtEmail);
+        tv1.setText(nombre);
+        tv2.setText(apellido);
+        tv3.setText(email);
     }
 
     public void Validar(View view)
@@ -52,17 +68,28 @@ public class ActualizarUsuarioActivity extends AppCompatActivity {
             Toast.makeText(this, "El password debe tener mínimo 8 caracteres",Toast.LENGTH_LONG).show();
         } else if(password.equals(confirmarpassword)) {
 
-            RegistrarUsuarioDAO dao = new RegistrarUsuarioDAO(getBaseContext());
+            UsuarioDAO dao = new UsuarioDAO(getBaseContext());
             try {
                 //dao.eliminarTodos();
-                dao.insertar(validarNombre.getText().toString(), validarApellido.getText().toString(),validarEmail.getText().toString(),validarContraseña.getText().toString());
-                Toast toast= Toast.makeText(getApplicationContext(), "Se insertó correctamente", Toast.LENGTH_SHORT);
+                //dao.insertar(validarNombre.getText().toString(), validarApellido.getText().toString(),validarEmail.getText().toString(),validarContraseña.getText().toString());
+                dao.actualizar(idObtenido,nombre, apellido,email,password);
+
+                SharedPreferences prefs = getSharedPreferences("PERFIL", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putInt("ID", idObtenido);
+                editor.putString("NOMBRE", nombre);
+                editor.putString("APELLIDO", apellido);
+                editor.putString("EMAIL", email);
+                editor.putString("PASSWORD", password);
+                editor.commit();
+
+                Toast toast= Toast.makeText(getApplicationContext(), "Se actualizó correctamente", Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
                 toast.show();
 
                 validarNombre.setText(""); validarApellido.setText(""); validarEmail.setText(""); validarContraseña.setText("");
 
-                Intent principal = new Intent(this, LoginUsuarioActivity.class);
+                Intent principal = new Intent(this, PerfilActivity.class);
                 startActivity(principal);
             }
             catch (DAOException e) { Log.i("UsuarioActualizadoActi", "====> " + e.getMessage()); } }

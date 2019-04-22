@@ -24,6 +24,7 @@
     <string name="aBusPro">Buscar Producto</string>
     <string name="aLogUsu">Login de Usuario</string>
     <string name="aDetPro">Producto</string>
-    <string name="aMapBas">Donde ubicarlo</string>
+    <string name="aMapBas">Dónde ubicarlo</string>
     <string name="aMen">Enviar Mensaje</string>
+    <string name="aActUsu">Actualizar Usuario</string>
 </resources>

@@ -126,6 +126,11 @@ public class BuscarProductoActivity extends AppCompatActivity {
         prepareProductoData();
     }
 
+    //Para que no se use el boton atras del android
+    @Override
+    public void onBackPressed() {
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_buscar_producto, menu);
@@ -134,9 +139,6 @@ public class BuscarProductoActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        //Bundle extras = getIntent().getExtras();
-        //String email = extras.getString("email");
 
         switch (item.getItemId()) {
             case R.id.menu_buscar:

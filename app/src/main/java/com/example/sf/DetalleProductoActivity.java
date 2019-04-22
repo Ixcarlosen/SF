@@ -40,6 +40,10 @@ public class DetalleProductoActivity extends AppCompatActivity {
                 Toast.makeText(this,
                         "Por el momento, llamar no esta disponible", Toast.LENGTH_LONG).show();
                 return true;
+            case R.id.menu_salir:
+                Intent salir = new Intent(this, LoginUsuarioActivity.class);
+                startActivity(salir);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

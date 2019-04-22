@@ -39,6 +39,10 @@ public class DetalleTiendaActivity extends AppCompatActivity {
                 Intent mapa = new Intent(this, MapaBasicoActivity.class);
                 startActivity(mapa);
                 return true;
+            case R.id.menu_salir:
+                Intent salir = new Intent(this, LoginUsuarioActivity.class);
+                startActivity(salir);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

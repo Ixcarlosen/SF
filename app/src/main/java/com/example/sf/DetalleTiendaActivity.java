@@ -48,17 +48,6 @@ public class DetalleTiendaActivity extends AppCompatActivity {
         }
     }
 
-    public void goToLisProTie(View view){
-        Intent intent = new Intent(this, ListarProductosTiendaActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToChatTie(View view){
-        //AlertDialog.Builder ayuda = new AlertDialog.Builder(this);
-        //ayuda.setMessage("Por el momento, el chat no esta disponible.").show();
-        Toast.makeText(DetalleTiendaActivity.this,
-                "Por el momento, el chat no esta disponible.", Toast.LENGTH_LONG).show();
-    }
     public void mensaje (View view)
     {
         Intent mensaje = new Intent(this, MensajeActivity.class);
@@ -66,7 +55,7 @@ public class DetalleTiendaActivity extends AppCompatActivity {
     }
     public void producto (View view)
     {
-        Intent producto = new Intent(this, BuscarProductoActivity.class);
+        Intent producto = new Intent(this, ListarProductosTiendaActivity.class);
         startActivity(producto);
     }
 }

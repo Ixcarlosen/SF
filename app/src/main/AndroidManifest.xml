@@ -65,7 +65,7 @@
             android:label="@string/aLisPro" />
         <activity
             android:name=".DetalleTiendaActivity"
-            android:label="@string/aDetTie" />
+            android:label="@string/aDetTie" ></activity>
         <activity
             android:name=".RegistrarUsuarioActivity"
             android:label="@string/aRegUsu" />

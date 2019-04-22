@@ -76,7 +76,7 @@
             android:text="PRODUCTOS"
             android:textColor="#FFFF"
             android:background="@layout/boton1"
-            android:onClick="btnLisPT"/>
+            android:onClick="producto"/>
 
         <Button
             android:id="@+id/btnMenT"

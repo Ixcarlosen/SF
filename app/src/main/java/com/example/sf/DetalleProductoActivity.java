@@ -35,55 +35,53 @@ public class DetalleProductoActivity extends AppCompatActivity {
         txtPrecio.setText(bundle.getString("precio"));
         String id = bundle.getString("id");
 
-            if (id.equals("1.0")){
-                imagen.setImageResource(R.drawable.camisa_hombre);
-            }
-            else if (id.equals("2.0"))
-            {
-                imagen.setImageResource(R.drawable.pantalon_hombre);
-            }
-            else if (id.equals("3.0"))
-            {
-                imagen.setImageResource(R.drawable.vestido1_mujer);
-            }
-            else if (id.equals("4.0"))
-            {
-                imagen.setImageResource(R.drawable.vestido2_mujer);
-            }
-            else if (id.equals("5.0"))
-            {
-                imagen.setImageResource(R.drawable.infantil1);
-            }
-            else if (id.equals("6.0"))
-            {
-                imagen.setImageResource(R.drawable.infantil2);
-            }
-            else if (id.equals("7.0"))
-            {
-                imagen.setImageResource(R.drawable.zapatilla_hombre);
-            }
-            else if (id.equals("8.0"))
-            {
-                imagen.setImageResource(R.drawable.botin_hombre);
-            }
-            else if (id.equals("9.0"))
-            {
-                imagen.setImageResource(R.drawable.zapatilla_mujer);
-            }
-            else if (id.equals("10.0"))
-            {
-                imagen.setImageResource(R.drawable.botin_mujer);
-            }
-            else if (id.equals("11.0"))
-            {
-                imagen.setImageResource(R.drawable.zapato_infantil);
-            }
-            else if (id.equals("12.0"))
-            {
-                imagen.setImageResource(R.drawable.zapato2_infantil);
-            }
-
-
+        if (id.equals("1.0")){
+            imagen.setImageResource(R.drawable.camisa_hombre);
+        }
+        else if (id.equals("2.0"))
+        {
+            imagen.setImageResource(R.drawable.pantalon_hombre);
+        }
+        else if (id.equals("3.0"))
+        {
+            imagen.setImageResource(R.drawable.vestido1_mujer);
+        }
+        else if (id.equals("4.0"))
+        {
+            imagen.setImageResource(R.drawable.vestido2_mujer);
+        }
+        else if (id.equals("5.0"))
+        {
+            imagen.setImageResource(R.drawable.infantil1);
+        }
+        else if (id.equals("6.0"))
+        {
+            imagen.setImageResource(R.drawable.infantil2);
+        }
+        else if (id.equals("7.0"))
+        {
+            imagen.setImageResource(R.drawable.zapatilla_hombre);
+        }
+        else if (id.equals("8.0"))
+        {
+            imagen.setImageResource(R.drawable.botin_hombre);
+        }
+        else if (id.equals("9.0"))
+        {
+            imagen.setImageResource(R.drawable.zapatilla_mujer);
+        }
+        else if (id.equals("10.0"))
+        {
+            imagen.setImageResource(R.drawable.botin_mujer);
+        }
+        else if (id.equals("11.0"))
+        {
+            imagen.setImageResource(R.drawable.zapato_infantil);
+        }
+        else if (id.equals("12.0"))
+        {
+            imagen.setImageResource(R.drawable.zapato2_infantil);
+        }
     }
 
     @Override
@@ -114,11 +112,6 @@ public class DetalleProductoActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    public void goToLisProTie(View view){
-        Intent intent = new Intent(this, ListarProductosTiendaActivity.class);
-        startActivity(intent);
     }
 
     public void pedir(View view) {

@@ -15,4 +15,8 @@
         android:id="@+id/menu_mapa"
         android:title="Ir al mapa"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_salir"
+        android:title="Salir"
+        app:showAsAction="never"/>
 </menu>

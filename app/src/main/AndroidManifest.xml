@@ -17,8 +17,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActualizarUsuarioActivity"></activity>
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -28,7 +26,8 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="my_channel_id_01" />
-
+        <activity android:name=".ActualizarUsuarioActivity"
+            android:label="@string/aActUsu"></activity>
         <activity
             android:name=".MapaBasicoActivity"
             android:label="@string/aMapBas" />
@@ -51,7 +50,13 @@
             android:label="@string/aLisTie" />
         <activity
             android:name=".LoginUsuarioActivity"
-            android:label="@string/aLogUsu" />
+            android:label="@string/aLogUsu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ListarMensajesActivity"
             android:label="@string/aLisMen" />
@@ -60,26 +65,18 @@
             android:label="@string/aLisPro" />
         <activity
             android:name=".DetalleTiendaActivity"
-            android:label="@string/aDetTie" />
+            android:label="@string/aDetTie" ></activity>
         <activity
             android:name=".RegistrarUsuarioActivity"
             android:label="@string/aRegUsu" />
         <activity android:name=".BuscarProductoActivity" />
         <activity
             android:name=".DetalleProductoActivity"
-            android:label="@string/aDetPro">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:label="@string/aDetPro"></activity>
         <service android:name=".MyAndroidFirebaseMsgService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
     </application>
-
 </manifest>

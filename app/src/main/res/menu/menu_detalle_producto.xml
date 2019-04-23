@@ -15,4 +15,8 @@
         android:id="@+id/menu_llamar"
         android:title="Llamar"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_salir"
+        android:title="Salir"
+        app:showAsAction="never"/>
 </menu>

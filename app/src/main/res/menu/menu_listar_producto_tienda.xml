@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_buscar"
+        android:title="Inicio"
+        android:icon="@drawable/camara"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_atras"
+        android:title="Inicio"
+        android:icon="@drawable/anterior"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_mensaje"
+        android:title="Mensaje"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_llamar"
+        android:title="Llamar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_salir"
+        android:title="Salir"
+        app:showAsAction="never"/>
+</menu>

@@ -38,17 +38,6 @@ public class CategoriaActivity extends AppCompatActivity {
 
     private String cadenaJson = "";
 
-   /* Integer[] imagenes = {
-            R.drawable.ropa_hombre,
-            R.drawable.ropa_mujer,
-            R.drawable.ropa_bebe,
-            R.drawable.calzado_hombre,
-            R.drawable.calzado_mujer,
-
-    };
-    String[] nombres = new String[]{
-            "Ropa Hombre", "Ropa Mujer", "Ropa Bebé", "Calzado Hombre", "Calzado Mujer"
-    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +64,26 @@ public class CategoriaActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+
+        mAdapter.setListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(final View v) {
+                final String nombre;
+                nombre = categoriaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo();
+                Toast.makeText(getApplicationContext(),"Selecciono: "+
+                        categoriaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo(),Toast.LENGTH_SHORT).show();
+
+                Categoria item =  categoriaList.get(recyclerView.getChildAdapterPosition(v));
+                Intent intent = new Intent (v.getContext(), DetalleProductoActivity.class);
+
+
+                startActivityForResult(intent, 0);
+
+
+            }
+        });
+
         recyclerView.setAdapter(mAdapter);
         prepareCategoriaData();
     }

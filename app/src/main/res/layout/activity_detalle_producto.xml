@@ -17,6 +17,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
+            android:textAlignment="center"
             android:src="@drawable/camisa_hombre" />
 
         <TextView
@@ -26,8 +27,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
-            android:text=""
+            android:text="Nombre"
             android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"
             android:textAlignment="center"/>
 
         <TextView
@@ -37,7 +40,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:text="" />
+            android:fontFamily="casual"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:text="Descripción" />
 
         <TextView
             android:id="@+id/txtMarca"
@@ -46,7 +52,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:text=""/>
+            android:fontFamily="casual"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:text="Marca"/>
 
         <TextView
             android:id="@+id/txtPrecio"
@@ -55,7 +64,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:text="" />
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:text="Precio" />
 
 
         <Button
@@ -77,10 +89,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="20dp"
-            android:text="MENSAJE"
+            android:text="Regresar a Lista"
             android:textColor="#FFFF"
             android:background="@layout/boton2"
-            android:onClick="mensaje"
+            android:onClick="irLista"
             android:layout_marginBottom="20dp"/>
     </LinearLayout>
 </ScrollView>

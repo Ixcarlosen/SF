@@ -12,45 +12,58 @@ import java.util.List;
 
 public class CategoriasAdapter extends
         RecyclerView.Adapter<CategoriasAdapter.MyViewHolder>
+        implements View.OnClickListener {
 
-{
     private List<Categoria> categoriaList;
-    public class MyViewHolder extends RecyclerView.ViewHolder
-    {
+    private View.OnClickListener listener;
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView titulo, descripcion;
         ImageView foto;
 
-        public MyViewHolder(View view)
-        {
+        public MyViewHolder(View view) {
             super(view);
             titulo = (TextView) view.findViewById(R.id.titulo);
             descripcion = (TextView) view.findViewById(R.id.descripcion);
-            foto =(ImageView)view.findViewById(R.id.idImagen);
+            foto = (ImageView) view.findViewById(R.id.idImagen);
         }
     }
 
-    public CategoriasAdapter(List<Categoria>categoriaList)
-    {
+    public CategoriasAdapter(List<Categoria> categoriaList) {
         this.categoriaList = categoriaList;
     }
 
     @Override
-    public CategoriasAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
-    { View itemView = LayoutInflater.from(parent.getContext()) .inflate(R.layout.categoria_fila,null,false);
-        return new MyViewHolder(itemView);
+    public CategoriasAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.categoria_fila, null, false);
+        itemView.setOnClickListener(this);
+        return new CategoriasAdapter.MyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(CategoriasAdapter.MyViewHolder holder, int position)
-    {
+    public void onBindViewHolder(CategoriasAdapter.MyViewHolder holder, int position) {
         Categoria categoria = categoriaList.get(position);
         holder.titulo.setText(categoria.getTitulo());
         holder.descripcion.setText(categoria.getDescripcion());
         holder.foto.setImageResource(categoria.getImagenId());
     }
 
-    @Override public int getItemCount() {
+    @Override
+    public int getItemCount() {
         return categoriaList.size();
+    }
+
+    public void setListener(View.OnClickListener listener) {
+        this.listener = listener;
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (listener != null) {
+            listener.onClick(v);
+
+        }
     }
 }
 

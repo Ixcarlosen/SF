@@ -60,7 +60,7 @@ public class BuscarProductoMActivity extends AppCompatActivity {
                 startActivity(inte);
                 return true;
             case R.id.menu_tienda:
-                Intent intent = new Intent(this, TiendaActivity.class);
+                Intent intent = new Intent(this, ListarTiendaActivity.class);
                 startActivity(intent);
                 return true;
 

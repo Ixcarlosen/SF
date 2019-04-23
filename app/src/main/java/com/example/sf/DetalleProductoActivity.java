@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class DetalleProductoActivity extends AppCompatActivity {
     private static final String TAG= "GalleryActivity";
     ImageView imagen;
+    String marca, precio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,10 @@ public class DetalleProductoActivity extends AppCompatActivity {
 
         txtNombre.setText(bundle.getString("nombre"));
         txtDescripcion.setText(bundle.getString("descripcion"));
-        txtMarca.setText(bundle.getString("marca"));
-        txtPrecio.setText(bundle.getString("precio"));
+        marca=bundle.getString("marca");
+        precio=bundle.getString("precio");
+        txtMarca.setText("Marca"+marca);
+        txtPrecio.setText("Precio"+precio);
         String id = bundle.getString("id");
 
         if (id.equals("1.0")){
@@ -137,9 +140,9 @@ public class DetalleProductoActivity extends AppCompatActivity {
         titulo.show();
     }
 
-    public void mensaje (View view) {
-        Intent mensaje = new Intent(this, MensajeActivity.class);
-        startActivity(mensaje);
+    public void irLista (View view) {
+        Intent lista = new Intent(this, BuscarProductoActivity.class);
+        startActivity(lista);
     }
 }
 

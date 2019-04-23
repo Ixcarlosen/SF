@@ -40,16 +40,16 @@ public class Tienda {
         return descripcion;
     }
 
-    public void setDescripcion(String genero) {
-        this.descripcion = genero;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String año) {
-        this.telefono = año;
+    public void setTelefono(String telefono) {
+        this.telefono =telefono;
     }
 
 

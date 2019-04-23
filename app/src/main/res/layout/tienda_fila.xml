@@ -36,14 +36,14 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/genero"
+                android:id="@+id/descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/titulo"
                 android:layout_margin="5dp" />
 
             <TextView
-                android:id="@+id/año"
+                android:id="@+id/telefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

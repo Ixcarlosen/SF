@@ -82,6 +82,7 @@ public class BuscarProductoActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         mAdapter.setListener(new View.OnClickListener() {
+
             @Override
             public void onClick(final View v) {
                 final String nombre;

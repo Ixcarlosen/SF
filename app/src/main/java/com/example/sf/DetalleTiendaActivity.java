@@ -1,7 +1,6 @@
 package com.example.sf;
 
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class DetalleTiendaActivity extends AppCompatActivity {
+    private static final String TAG= "GalleryActivity";
     ImageView imagen;
 
     @Override
@@ -19,14 +19,14 @@ public class DetalleTiendaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_tienda);
 
-        TextView txtNombre = findViewById(R.id.txtNombre);
+        TextView txtTitulo = findViewById(R.id.txtTitulo);
         TextView txtDescripcion = findViewById(R.id.txtDescripcion);
         TextView txtTelefono = findViewById(R.id.txtTelefono);
-        imagen =findViewById(R.id.imagen);
+        imagen =(ImageView)findViewById(R.id.imagen);
 
         Bundle bundle = getIntent().getExtras();
 
-        txtNombre.setText(bundle.getString("titulo"));
+        txtTitulo.setText(bundle.getString("titulo"));
         txtDescripcion.setText(bundle.getString("descripcion"));
         txtTelefono.setText(bundle.getString("telefono"));
         String id = bundle.getString("id");
@@ -46,7 +46,6 @@ public class DetalleTiendaActivity extends AppCompatActivity {
         {
             imagen.setImageResource(R.drawable.logo_hm);
         }
-
 
     }
 

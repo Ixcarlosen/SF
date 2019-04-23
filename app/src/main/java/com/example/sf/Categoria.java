@@ -1,6 +1,7 @@
 package com.example.sf;
 
 public class Categoria {
+
     private String titulo;
     private String descripcion;
     private int imagenId;

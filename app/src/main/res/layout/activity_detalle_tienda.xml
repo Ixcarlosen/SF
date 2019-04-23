@@ -17,10 +17,10 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/logotienda" />
+            android:src="@drawable/logo_ripley" />
 
         <TextView
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -28,6 +28,8 @@
             android:layout_marginEnd="20dp"
             android:text="Nombre de la tienda"
             android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"
             android:textAlignment="center"/>
 
         <TextView
@@ -37,6 +39,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
+            android:fontFamily="casual"
+            android:textSize="18dp"
+            android:textStyle="italic"
             android:text="Descripción" />
 
         <TextView
@@ -46,6 +51,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
+            android:fontFamily="casual"
+            android:textSize="18dp"
+            android:textStyle="italic"
             android:text="Dato 1"/>
 
         <TextView
@@ -55,6 +63,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
+            android:fontFamily="casual"
+            android:textSize="18dp"
+            android:textStyle="italic"
             android:text="¡Encuentra lo que estas buscando a los mejores precios!" />
 
 
@@ -79,7 +90,7 @@
             android:layout_marginEnd="20dp"
             android:text="MENSAJE"
             android:textColor="#FFFF"
-            android:background="@layout/boton1"
+            android:background="@layout/boton2"
             android:onClick="mensaje"
             android:layout_marginBottom="20dp"/>
     </LinearLayout>

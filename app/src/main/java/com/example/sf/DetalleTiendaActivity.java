@@ -7,14 +7,47 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DetalleTiendaActivity extends AppCompatActivity {
+    ImageView imagen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_tienda);
+
+        TextView txtNombre = findViewById(R.id.txtNombre);
+        TextView txtDescripcion = findViewById(R.id.txtDescripcion);
+        TextView txtTelefono = findViewById(R.id.txtTelefono);
+        imagen =findViewById(R.id.imagen);
+
+        Bundle bundle = getIntent().getExtras();
+
+        txtNombre.setText(bundle.getString("titulo"));
+        txtDescripcion.setText(bundle.getString("descripcion"));
+        txtTelefono.setText(bundle.getString("telefono"));
+        String id = bundle.getString("id");
+
+        if (id.equals("1.0")){
+            imagen.setImageResource(R.drawable.logo_ripley);
+        }
+        else if (id.equals("2.0"))
+        {
+            imagen.setImageResource(R.drawable.logo_saga);
+        }
+        else if (id.equals("3.0"))
+        {
+            imagen.setImageResource(R.drawable.logo_paris);
+        }
+        else if (id.equals("4.0"))
+        {
+            imagen.setImageResource(R.drawable.logo_hm);
+        }
+
+
     }
 
     @Override

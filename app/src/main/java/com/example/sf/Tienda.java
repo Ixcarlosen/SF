@@ -2,7 +2,7 @@ package com.example.sf;
 
 public class Tienda {
 
-
+    private String id;
     private String titulo;
     private String descripcion;
     private String telefono;
@@ -19,6 +19,15 @@ public class Tienda {
     public Tienda() {
 
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getTitulo() {
         return titulo;
     }

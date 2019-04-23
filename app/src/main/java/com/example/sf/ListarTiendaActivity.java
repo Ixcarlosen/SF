@@ -63,10 +63,13 @@ public class ListarTiendaActivity extends AppCompatActivity {
                 final String nombre;
 
 
-                nombre = tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo();
-                Toast.makeText(getApplicationContext(),"Selección: "+
-                        tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo(),Toast.LENGTH_SHORT).show();
+                Tienda item = tiendaList.get(recyclerView.getChildAdapterPosition(v));
                 Intent intent = new Intent (v.getContext(), DetalleTiendaActivity.class);
+
+                intent.putExtra("id", item.getId());
+                intent.putExtra("titulo", item.getTitulo());
+                intent.putExtra("descripcion", item.getDescripcion());
+                intent.putExtra("telefono", item.getTelefono());
                 startActivityForResult(intent, 0);
             }
         });

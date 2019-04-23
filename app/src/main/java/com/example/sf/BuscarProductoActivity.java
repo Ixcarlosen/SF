@@ -94,7 +94,7 @@ public class BuscarProductoActivity extends AppCompatActivity {
 
                 intent.putExtra("id", item.getId());
                 intent.putExtra("nombre", item.getNombre());
-                intent.putExtra("descripción", item.getDescripcion());
+                intent.putExtra("descripcion", item.getDescripcion());
                 intent.putExtra("marca", item.getMarca());
                 intent.putExtra("precio", item.getPrecio());
                 startActivityForResult(intent, 0);

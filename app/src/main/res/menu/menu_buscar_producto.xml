@@ -12,6 +12,14 @@
         android:title="Mi perfil"
         app:showAsAction="never"/>
     <item
+        android:id="@+id/menu_categorias"
+        android:title="Salir"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_tiendas"
+        android:title="Salir"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/menu_salir"
         android:title="Salir"
         app:showAsAction="never"/>

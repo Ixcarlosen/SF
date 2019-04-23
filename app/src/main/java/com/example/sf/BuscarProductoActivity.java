@@ -129,6 +129,10 @@ public class BuscarProductoActivity extends AppCompatActivity {
                 Intent categorias = new Intent(this, CategoriaActivity.class);
                 startActivity(categorias);
                 return true;
+            case R.id.menu_tiendas:
+                Intent tiendas = new Intent(this, ListarTiendaActivity.class);
+                startActivity(tiendas);
+                return true;
             case R.id.menu_perfil:
                 Intent perfil = new Intent(this, PerfilActivity.class);
                 startActivity(perfil);

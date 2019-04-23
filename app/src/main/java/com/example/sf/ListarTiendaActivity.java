@@ -61,6 +61,10 @@ public class ListarTiendaActivity extends AppCompatActivity {
             @Override
             public void onClick(final View v) {
                 final String nombre;
+                nombre = tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo();
+                Toast.makeText(getApplicationContext(),"Selecciono: "+
+                        tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo(),Toast.LENGTH_SHORT).show();
+
 
 
                 Tienda item = tiendaList.get(recyclerView.getChildAdapterPosition(v));
@@ -153,7 +157,7 @@ public class ListarTiendaActivity extends AppCompatActivity {
         tiendaList.add(tienda);
 
 */
-        //mAdapter.notifyDataSetChanged();
+
 
     }
     public void onRun(){

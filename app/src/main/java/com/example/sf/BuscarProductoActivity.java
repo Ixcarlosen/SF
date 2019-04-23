@@ -84,10 +84,10 @@ public class BuscarProductoActivity extends AppCompatActivity {
         mAdapter.setListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                /*final String nombre;
+                final String nombre;
                 nombre = productoList.get(recyclerView.getChildAdapterPosition(v)).getNombre();
-                Toast.makeText(getApplicationContext(),"Selección: "+
-                        productoList.get(recyclerView.getChildAdapterPosition(v)).getNombre(),Toast.LENGTH_SHORT).show();*/
+                Toast.makeText(getApplicationContext(),"Selecciono: "+
+                        productoList.get(recyclerView.getChildAdapterPosition(v)).getNombre(),Toast.LENGTH_SHORT).show();
 
                 Producto item = productoList.get(recyclerView.getChildAdapterPosition(v));
                 Intent intent = new Intent (v.getContext(), DetalleProductoActivity.class);

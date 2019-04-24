@@ -7,8 +7,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,12 +29,14 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -48,6 +55,9 @@ public class BuscarProductoActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ProductoAdapter mAdapter;
     private String cadenaJson = "";
+
+    private final String CARPETA_RAIZ="misImagenesPrueba/";
+    private final String RUTA_IMAGEN=CARPETA_RAIZ+"misFotos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,7 +136,10 @@ public class BuscarProductoActivity extends AppCompatActivity {
             case R.id.menu_buscar:
                 Toast.makeText(BuscarProductoActivity.this,
                         "Por el momento, la cámara no esta disponible.", Toast.LENGTH_LONG).show();
+
+                //tomarfoto();
                 return true;
+
             case R.id.menu_categorias:
                 Intent categorias = new Intent(this, CategoriaActivity.class);
                 startActivity(categorias);
@@ -146,6 +159,53 @@ public class BuscarProductoActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void tomarfoto() {
+
+        Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent,0);
+
+
+    /*File fileImagen=new File(Environment.getExternalStorageDirectory(),RUTA_IMAGEN);
+    boolean creada=fileImagen.exists();
+    String nombreImagen="";
+
+    if (creada==false)
+    {
+        creada=fileImagen.mkdirs();
+    }
+
+    if (creada==true)
+    {
+        nombreImagen=(System.currentTimeMillis()/100)+"jpg";
+
+
+    }
+
+        final String path=Environment.getExternalStorageDirectory()+File.separator+RUTA_IMAGEN+File.separator+nombreImagen;
+        File imagen=new File(path);
+        MediaScannerConnection.scanFile(this,new String[]{path},null,
+                new MediaScannerConnection.OnScanCompletedListener(){
+                    @Override
+                    public void onScanCompleted(String s,Uri uri)
+                    {
+                        Log.i("Ruta de almacenamiento","Path: "+path);
+                    }
+                });
+
+    /*Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagen));
+
+   startActivityForResult(intent,20);*/
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+       super.onActivityResult(requestCode,resultCode,data);
+        /*Bitmap bitmap=(Bitmap)data.getExtras().get("data");
+        imageView.setImageBitmap(bitmap);*/
     }
 
     /*probando*/
@@ -252,12 +312,7 @@ public class BuscarProductoActivity extends AppCompatActivity {
         mAdapter.notifyDataSetChanged();
     }
 
-    public void goToCamara(View view) {
-        //AlertDialog.Builder ayuda = new AlertDialog.Builder(this);
-        //ayuda.setMessage("Por el momento, la cámara no esta disponible.").show();
-        Toast.makeText(BuscarProductoActivity.this,
-                "Por el momento, la cámara no esta disponible.", Toast.LENGTH_LONG).show();
-    }
+
 
     private void createChannel() { // Notification channel should only be created for devices running Android API level 26+.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

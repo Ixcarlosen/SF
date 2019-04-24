@@ -65,6 +65,10 @@ public class DetalleTiendaActivity extends AppCompatActivity {
                 Intent buscar = new Intent(this, BuscarProductoActivity.class);
                 startActivity(buscar);
                 return true;
+            case R.id.menu_tiendas:
+                Intent tienda = new Intent(this,ListarTiendaActivity.class);
+                startActivity(tienda);
+                return true;
             case R.id.menu_llamar:
                 Toast.makeText(this,
                         "Por el momento, llamar no esta disponible", Toast.LENGTH_LONG).show();
@@ -95,4 +99,5 @@ public class DetalleTiendaActivity extends AppCompatActivity {
         Intent producto = new Intent(this, ListarProductosTiendaActivity.class);
         startActivity(producto);
     }
+
 }

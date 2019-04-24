@@ -124,12 +124,12 @@ public class DetalleProductoActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_buscar:
-                Intent buscar = new Intent(this, BuscarProductoActivity.class);
-                startActivity(buscar);
+                Toast.makeText(this,
+                        "Por el momento, la cámara no está disponible", Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.menu_irtienda:
-                Intent tienda = new Intent(this, DetalleTiendaActivity.class);
-                startActivity(tienda);
+            case R.id.menu_atras:
+                Intent producto = new Intent(this,BuscarProductoActivity.class);
+                startActivity(producto);
                 return true;
             case R.id.menu_llamar:
                 Toast.makeText(this,
@@ -142,6 +142,11 @@ public class DetalleProductoActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    //Para que no se use el boton atras del android
+    @Override
+    public void onBackPressed() {
     }
 
     public void pedir(View view) {

@@ -8,6 +8,10 @@
         android:icon="@drawable/camara"
         app:showAsAction="always"/>
     <item
+        android:id="@+id/menu_tiendas"
+        android:title="Listar Tiendas"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/menu_llamar"
         android:title="Llamar"
         app:showAsAction="never"/>

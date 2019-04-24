@@ -173,18 +173,8 @@ public class DetalleProductoActivity extends AppCompatActivity {
     }
     public void irTienda (View view)
     {
-        Intent tiendaIntent = new Intent(this, DetalleTiendaActivity.class);
         String id = bundle.getString("tiendaid");
         obtenerTienda(id);
-
-        if (tiendaList.size()>0){
-            Tienda item = tiendaList.get(0);
-            tiendaIntent.putExtra("id", item.getId());
-            tiendaIntent.putExtra("titulo", item.getTitulo());
-            tiendaIntent.putExtra("descripcion", item.getDescripcion());
-            tiendaIntent.putExtra("telefono", item.getTelefono());
-        }
-        startActivity(tiendaIntent);
     }
 
 
@@ -258,6 +248,16 @@ public class DetalleProductoActivity extends AppCompatActivity {
             }
             tiendaList.add(tienda);
         }
+        Intent tiendaIntent = new Intent(this, DetalleTiendaActivity.class);
+
+        if (tiendaList.size()>0){
+            Tienda item = tiendaList.get(0);
+            tiendaIntent.putExtra("id", item.getId());
+            tiendaIntent.putExtra("titulo", item.getTitulo());
+            tiendaIntent.putExtra("descripcion", item.getDescripcion());
+            tiendaIntent.putExtra("telefono", item.getTelefono());
+        }
+        startActivity(tiendaIntent);
     }
 }
 

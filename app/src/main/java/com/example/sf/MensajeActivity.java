@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MensajeActivity extends AppCompatActivity {
@@ -26,6 +27,11 @@ public class MensajeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mensaje);
+
+        TextView txtTelefono = findViewById(R.id.textPhoneNo);
+        Bundle bundle = getIntent().getExtras();
+
+        txtTelefono.setText(bundle.getString("telefono"));
 
         //comprobar si el permiso no está concedido
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)!= PackageManager.PERMISSION_GRANTED) {

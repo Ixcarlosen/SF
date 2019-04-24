@@ -18,6 +18,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
             android:textAlignment="center"
+            android:layout_gravity="center"
             android:src="@drawable/camisa_hombre" />
 
         <TextView
@@ -81,13 +82,23 @@
             android:textColor="#FFFF"
             android:background="@layout/boton1"
             android:onClick="pedir"/>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:textAlignment="center">
             <Button
                 android:id="@+id/btnMenT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+
                 android:text="Regresar a Lista"
                 android:textColor="#FFFF"
                 android:background="@layout/boton2"
@@ -95,16 +106,17 @@
                 android:layout_gravity="left"/>
             <Button
                 android:id="@+id/btnTienda"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
                 android:text="Ir a Tienda"
                 android:textColor="#FFFF"
                 android:background="@layout/boton2"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity="right"/>
 
+                android:layout_gravity="right"/>
+</LinearLayout>
     </LinearLayout>
 </ScrollView>

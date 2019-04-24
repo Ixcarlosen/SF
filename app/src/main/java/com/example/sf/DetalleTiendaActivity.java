@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class DetalleTiendaActivity extends AppCompatActivity {
     private static final String TAG= "GalleryActivity";
     ImageView imagen;
+    String telefono,tele;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,8 @@ public class DetalleTiendaActivity extends AppCompatActivity {
 
         txtTitulo.setText(bundle.getString("titulo"));
         txtDescripcion.setText(bundle.getString("descripcion"));
-        txtTelefono.setText(bundle.getString("telefono"));
+        telefono=bundle.getString("telefono");
+        txtTelefono.setText("Teléfono: "+telefono);
         String id = bundle.getString("id");
 
         if (id.equals("1.0")){
@@ -82,7 +84,10 @@ public class DetalleTiendaActivity extends AppCompatActivity {
 
     public void mensaje (View view)
     {
+        Bundle bundle = getIntent().getExtras();
+        tele=bundle.getString("telefono");
         Intent mensaje = new Intent(this, MensajeActivity.class);
+        mensaje.putExtra("telefono",tele);
         startActivity(mensaje);
     }
     public void producto (View view)

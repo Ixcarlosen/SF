@@ -13,11 +13,11 @@
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_categorias"
-        android:title="Salir"
+        android:title="Listar Categorías"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_tiendas"
-        android:title="Salir"
+        android:title="Listar Tiendas"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_salir"

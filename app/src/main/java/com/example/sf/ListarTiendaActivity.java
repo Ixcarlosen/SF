@@ -104,43 +104,26 @@ public class ListarTiendaActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         getMenuInflater().inflate(R.menu.menu_tienda,menu);
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
-
-            case R.id.menu_home:
-
+            case R.id.menu_buscar:
                 Intent inte = new Intent(this, BuscarProductoActivity.class);
-
                 startActivity(inte);
-
                 return true;
-
             case R.id.menu_categoria:
-
                 Intent categoria = new Intent(this, CategoriaActivity.class);
-
                 startActivity(categoria);
-
                 return true;
-
             case R.id.menu_salir:
-
                 Intent salir = new Intent(this, LoginUsuarioActivity.class);
-
                 startActivity(salir);
-
                 return true;
-
             default:
-
                 return super.onOptionsItemSelected(item);
         }
     }

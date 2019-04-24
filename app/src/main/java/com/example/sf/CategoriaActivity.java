@@ -38,7 +38,6 @@ public class CategoriaActivity extends AppCompatActivity {
 
     private String cadenaJson = "";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,10 +76,7 @@ public class CategoriaActivity extends AppCompatActivity {
                 Categoria item =  categoriaList.get(recyclerView.getChildAdapterPosition(v));
                 Intent intent = new Intent (v.getContext(), DetalleProductoActivity.class);
 
-
                 startActivityForResult(intent, 0);
-
-
             }
         });
 
@@ -97,22 +93,21 @@ public class CategoriaActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
-            case R.id.menu_home:
+            case R.id.menu_buscar:
                 Intent home = new Intent(this, BuscarProductoActivity.class);
                 startActivity(home);
                 return true;
-
             case R.id.menu_tienda:
                 Intent tienda = new Intent(this, ListarTiendaActivity.class);
                 startActivity(tienda);
                 return true;
-
+            case R.id.menu_salir:
+                Intent salir = new Intent(this, LoginUsuarioActivity.class);
+                startActivity(salir);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
-
-
     }
 
 

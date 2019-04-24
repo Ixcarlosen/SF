@@ -98,6 +98,7 @@ public class BuscarProductoActivity extends AppCompatActivity {
                 intent.putExtra("descripcion", item.getDescripcion());
                 intent.putExtra("marca", item.getMarca());
                 intent.putExtra("precio", item.getPrecio());
+                intent.putExtra("tiendaid", item.getTiendaId());
                 startActivityForResult(intent, 0);
 
 
@@ -192,56 +193,56 @@ public class BuscarProductoActivity extends AppCompatActivity {
             producto.setDescripcion(x.get("descripcion").toString());
             producto.setPrecio(x.get("precio").toString());
             producto.setMarca(x.get("marca").toString());
-            String image = x.get("id").toString();
-            producto.setId(image);
-            if (image.isEmpty()){
+            producto.setId(x.get("id").toString());
+            producto.setTiendaId(x.get("tienda_id").toString());
+            if (producto.getId().isEmpty()){
                 //nunca entra aqui
             }
             else {
-                if (image.equals("1.0")){
+                if (producto.getId().equals("1.0")){
                     producto.setImagen(R.drawable.camisa_hombre);
                 }
-                else if (image.equals("2.0"))
+                else if (producto.getId().equals("2.0"))
                 {
                     producto.setImagen(R.drawable.pantalon_hombre);
                 }
-                else if (image.equals("3.0"))
+                else if (producto.getId().equals("3.0"))
                 {
                     producto.setImagen(R.drawable.vestido1_mujer);
                 }
-                else if (image.equals("4.0"))
+                else if (producto.getId().equals("4.0"))
                 {
                     producto.setImagen(R.drawable.vestido2_mujer);
                 }
-                else if (image.equals("5.0"))
+                else if (producto.getId().equals("5.0"))
                 {
                     producto.setImagen(R.drawable.infantil1);
                 }
-                else if (image.equals("6.0"))
+                else if (producto.getId().equals("6.0"))
                 {
                     producto.setImagen(R.drawable.infantil2);
                 }
-                else if (image.equals("7.0"))
+                else if (producto.getId().equals("7.0"))
                 {
                     producto.setImagen(R.drawable.zapatilla_hombre);
                 }
-                else if (image.equals("8.0"))
+                else if (producto.getId().equals("8.0"))
                 {
                     producto.setImagen(R.drawable.botin_hombre);
                 }
-                else if (image.equals("9.0"))
+                else if (producto.getId().equals("9.0"))
                 {
                     producto.setImagen(R.drawable.zapatilla_mujer);
                 }
-                else if (image.equals("10.0"))
+                else if (producto.getId().equals("10.0"))
                 {
                     producto.setImagen(R.drawable.botin_mujer);
                 }
-                else if (image.equals("11.0"))
+                else if (producto.getId().equals("11.0"))
                 {
                     producto.setImagen(R.drawable.zapato_infantil);
                 }
-                else if (image.equals("12.0"))
+                else if (producto.getId().equals("12.0"))
                 {
                     producto.setImagen(R.drawable.zapato2_infantil);
                 }

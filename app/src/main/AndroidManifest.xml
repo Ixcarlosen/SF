@@ -52,11 +52,7 @@
         <activity
             android:name=".ListarTiendaActivity"
             android:label="@string/aLisTie">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".LoginUsuarioActivity"
@@ -73,7 +69,13 @@
         <activity
             android:name=".RegistrarUsuarioActivity"
             android:label="@string/aRegUsu" />
-        <activity android:name=".BuscarProductoActivity"></activity>
+        <activity android:name=".BuscarProductoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".DetalleProductoActivity"
             android:label="@string/aDetPro"></activity>

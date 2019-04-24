@@ -79,14 +79,15 @@ public class ListarTiendaActivity extends AppCompatActivity {
             @Override
 
             public void onClick(final View v) {
+               /*
 
                 final String nombre;
-               nombre = tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo();
+                nombre = tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo();
 
                 Toast.makeText(getApplicationContext(),"Selección: "+
                         tiendaList.get(recyclerView.getChildAdapterPosition(v)).getTitulo(),Toast.LENGTH_SHORT).show();
 
-
+                */
                 Tienda item = tiendaList.get(recyclerView.getChildAdapterPosition(v));
                 Intent intent = new Intent (v.getContext(), DetalleTiendaActivity.class);
 
@@ -94,7 +95,8 @@ public class ListarTiendaActivity extends AppCompatActivity {
                 intent.putExtra("titulo", item.getTitulo());
                 intent.putExtra("descripcion", item.getDescripcion());
                 intent.putExtra("telefono", item.getTelefono());
-               startActivityForResult(intent, 0);
+                startActivityForResult(intent, 0);
+
             }
         });
         recyclerView.setAdapter(mAdapter);
@@ -220,23 +222,24 @@ tienda = new Tienda("Estilos", "Ofrecemos la mejor calidad a nuestros usuarios",
             tienda.setTitulo(x.get("titulo").toString());
             tienda.setDescripcion(x.get("descripcion").toString());
             tienda.setTelefono(x.get("telefono").toString());
-            String image = x.get("id").toString();
-            if (image.isEmpty()){
+            tienda.setId(x.get("id").toString());
+
+            if (tienda.getId().isEmpty()){
                 //nunca entra aqui
             }
             else {
-                if (image.equals("1.0")){
+                if (tienda.getId().equals("1.0")){
                     tienda.setImagenId(R.drawable.logo_ripley);
                 }
-                else if (image.equals("2.0"))
+                else if (tienda.getId().equals("2.0"))
                 {
                     tienda.setImagenId(R.drawable.logo_saga);
                 }
-                else if (image.equals("3.0"))
+                else if (tienda.getId().equals("3.0"))
                 {
                     tienda.setImagenId(R.drawable.logo_paris);
                 }
-                else if (image.equals("4.0"))
+                else if (tienda.getId().equals("4.0"))
                 {
                     tienda.setImagenId(R.drawable.logo_hm);
                 }

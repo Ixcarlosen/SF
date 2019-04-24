@@ -82,17 +82,29 @@
             android:background="@layout/boton1"
             android:onClick="pedir"/>
 
-        <Button
-            android:id="@+id/btnMenT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="20dp"
-            android:text="Regresar a Lista"
-            android:textColor="#FFFF"
-            android:background="@layout/boton2"
-            android:onClick="irLista"
-            android:layout_marginBottom="20dp"/>
+            <Button
+                android:id="@+id/btnMenT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Regresar a Lista"
+                android:textColor="#FFFF"
+                android:background="@layout/boton2"
+                android:onClick="irLista"
+                android:layout_gravity="left"/>
+            <Button
+                android:id="@+id/btnTienda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:text="Ir a Tienda"
+                android:textColor="#FFFF"
+                android:background="@layout/boton2"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="right"/>
+
     </LinearLayout>
 </ScrollView>
